@@ -1,10 +1,15 @@
 ---
-const platform = "github"
-const username = "opack"
-const linkedin = "didier-demange"
+import Social from './Social.astro'
 ---
+<style>
+    footer {
+        display: flex;
+        gap: 1rem;
+        margin-top: 2rem;
+    }
+</style>
 
 <footer>
-    <p>Apprenez-en plus sur mes projets sur <a href={`https://www.${platform}.com/${username}`}>{platform}</a> !</p>
-    <p>Consultez mon profil <a href={`https://www.linkedin.com/in/${linkedin}/`}>LinkedIn</a> !</p>
+    <Social platform="github" username="opack" />
+    <Social platform="linkedin" username="didier-demange" />
 </footer>
