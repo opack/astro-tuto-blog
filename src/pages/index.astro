@@ -1,12 +1,15 @@
 ---
-const pageTitle = "Page d'accueil";
+import '../styles/global.css'
+import Navigation from '../components/Navigation.astro'
+
+const pageTitle = "Page d'accueil"
 
 const identity = {
 	firstName: "Sarah",
 	country: "Canada",
 	occupation: "Rédactrice technique",
 	hobbies: ["photographie", "observation des oiseaux", "baseball"],
-};
+}
 ---
 
 <html lang="en">
@@ -19,9 +22,7 @@ const identity = {
 	</head>
 	<body>
 
-		<a href="/">Accueil</a>
-		<a href="/blog/">Blog</a>
-		<a href="/about/">À propos</a>
+		<Navigation />
 
 		<h1>{pageTitle}</h1>
 	</body>
